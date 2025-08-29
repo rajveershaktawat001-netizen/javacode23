@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner (System.in);
+        double height = sc.nextDouble();
+        double weight = sc.nextDouble();
+        double BMI = weight/(height*height);
+        System.out.println(BMI);
+        if(BMI<=18.4){
+            System.out.print("underweight");
+        }
+        else if(BMI>=23.5||BMI<=24.9){
+            System.out.print("normal");
+        }
+        else if(BMI>=25||BMI<=39.9){
+            System.out.print("overweight");
+        }
+         else if(BMI>=40){
+            System.out.print("Obese");
+        }
+        
+    }
+}

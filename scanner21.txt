@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner (System.in);
+        int first = sc.nextInt();
+        int secound =sc.nextInt();
+        sc.nextLine();
+        String operator = sc.nextLine();
+        double result = 0;
+        
+        
+        switch(operator){
+            case "+":
+               result =  first+secound;
+               System.out.println(result);
+               break;
+               
+            case "-":
+                result =  first-secound;
+               System.out.println(result);
+               break;
+               
+            case "*":
+                result =  first*secound;
+               System.out.println(result);
+               break;
+               
+            case "/":
+                if (secound!=0){ 
+                result =  first/secound;
+               System.out.println(result);
+                }
+                else{
+                    System.out.println("enter valid num");
+                }
+               break; 
+         
+         default:
+         System.out.println("enter valid operator");
+        }
+        }
+    }

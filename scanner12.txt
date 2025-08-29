@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+       int original = sc.nextInt();
+       int fake = original;
+       int sum =0;
+       while(fake!=0){
+           int digit = fake%10;
+           sum+=(digit*digit*digit);
+           fake = fake/10;
+       }
+       if(sum==original){
+           System.out.println(sum+"armstrong num");
+       }
+       else{
+           System.out.println("not armstrong num");
+       }
+    }
+}

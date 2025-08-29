@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int physics = sc.nextInt();
+        int chamestry = sc.nextInt();
+        int maths = sc.nextInt();
+        int total = (physics+chamestry+maths);
+        double persentage = (total*100.0)/300;
+        System.out.println(persentage);
+        if(persentage<36){
+            System.out.println("fail");
+        }
+        else if((persentage>36)&&(persentage<50)){
+            System.out.println("pass");
+        }
+        else if((persentage>60)&&(persentage<80)){
+            System.out.println("first division");
+        }
+        else{
+            System.out.println("top");
+        }
+    }
+}

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("age of 3 frnds");
+        int amar_age = sc.nextInt();
+        int akbar_age =sc.nextInt();
+        int anthony_age=sc.nextInt();
+        if(amar_age<akbar_age && amar_age<anthony_age){
+            System.out.println("amar is youngest");
+        }
+         else if(amar_age>akbar_age && akbar_age<anthony_age){
+            System.out.println("akbar is youngest");
+        }
+        else if(amar_age>anthony_age && akbar_age>anthony_age){
+            System.out.println("akbar is youngest");
+        }
+         System.out.println("Height of 3 frnds");
+        int amar_height = sc.nextInt();
+        int akbar_height=sc.nextInt();
+        int anthony_height=sc.nextInt();
+         if(amar_height>akbar_height&&amar_height>anthony_height){
+            System.out.println("amar is tallest");
+        }
+        else if(amar_height<akbar_height&&akbar_height>anthony_height){
+            System.out.println("akbar is tallest");
+        }
+        else if(amar_height<anthony_height&&akbar_height<anthony_height){
+            System.out.println("anthony is tallest");
+        }
+    }
+}
